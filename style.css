@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+*,*::after,*::before{
+    margin:5px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+.container{
+    max-width: 90%;
+    display:grid;
+    grid-template-rows: repeat(3,260px);
+    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+    grid-gap:20px;
+    padding:50px;
+    margin:0 auto;
+    /* border: 1px solid blue; */
+}
+.box{
+    /* background: yellow; */
+    text-align:center;
+    padding:20px;
+    display:grid;
+    justify-items: center;
+    /* border: 1px solid red; */
+}
+
+.box:last-child{
+    /* background: red; */
+    grid-column-start: 2;
+    grid-column-end: 4
+}
+.container1{
+   display:grid;
+   justify-items: center;
+   grid-gap:10px;
+}
+.box input{
+    width:100px;
+}
+img{
+    width:100px;
+    height: 100px;
+}
+
+.gravedad{
+    position:relative;
+    font-weight: 900;
+}
+.gravedad:after{
+content:"2";
+font-size: 10px;
+position:absolute;
+top:-5px;
+}
+
+button{
+    padding:10px;
+    border:none;
+    border:1px dotted black;
+
+}
+h3{
+    border-bottom: 1.5px dotted red;
+}
+h1{
+    text-transform:uppercase;
+
+    border-bottom: 1px double red;
+}
+.btnl{
+    visibility: hidden;
+}
+.botones{
+    /* display:grid;
+    justify-content: center; */
+    /* border: 1px solid red; */
+    position:relative;
+    width:100px;
+    height: 50px
+}
+
+.botones button{
+    position: absolute;
+}
+body{
+    background-image: url("https://i.ibb.co/tbZYsVX/space.jpg");
+    background-repeat: no-repeat;
+    /* background-origin: border-box; */
+    background-size: 30%;
+    background-position-x: 100px;
+    background-attachment: fixed;
+}
